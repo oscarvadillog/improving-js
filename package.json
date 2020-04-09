@@ -4,6 +4,7 @@
     "description": "Improving JS",
     "main": "index.js",
     "scripts": {
+        "websocket:client": "node websocket/client.js",
         "websocket:server": "node websocket/server.js"
     },
     "repository": {
@@ -22,6 +23,7 @@
     },
     "homepage": "https://github.com/oscarvadillog/improving-js#readme",
     "dependencies": {
+        "chalk": "^4.0.0",
         "ws": "^7.2.3"
     }
 }

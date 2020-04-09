@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket API</title>
+</head>
+<body>
+    <script>
+        const URL = 'ws://localhost:8080';
+        const socket = new WebSocket(URL);
+        socket.addEventListener('open', ev => {
+            console.log(`Connected successfully to ${URL}`);
+            socket.send('Hello from the website!')
+        })
+        socket.addEventListener('message', ev => {
+            console.log(`recv: ${ev.data}`);
+            console.log('Closing...');
+            socket.close();
+        })
+    </script>
+</body>
+</html>
