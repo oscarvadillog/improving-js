@@ -18,6 +18,12 @@
             console.log('Closing...');
             socket.close();
         })
+        socket.addEventListener('close', ev => {
+            console.log(`Connection closed`, ev);
+        })
+        socket.addEventListener('error', err => {
+            console.error(`Error: ${err}`);
+        })
     </script>
 </body>
 </html>
