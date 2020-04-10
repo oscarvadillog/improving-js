@@ -4,6 +4,7 @@
     "description": "Improving JS",
     "main": "index.js",
     "scripts": {
+        "fetch:server": "node fetch/server.js",
         "websocket:client": "node websocket/client.js",
         "websocket:server": "node websocket/server.js"
     },
