@@ -14,7 +14,7 @@ First, start the HTTP server based on `http` module as below:
 npm run fetch:server
 ```
 
-Then open the [client](fetch/client.html) file
+Then open the [client](fetch/client.html) file to make HTTP requests using Fetch API
 
 
 ### WebSocket API
