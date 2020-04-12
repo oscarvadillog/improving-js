@@ -18,5 +18,19 @@ http.createServer((req, res) => {
         date: dt.toISOString(),
         hobbies: ['i', 'love', 'js', '=)'],
     }));
-    res.end();
+
+    if (req.method === 'POST') {
+        let body = '';
+        req.on('data', chunk => {
+            body += chunk.toString();
+        });
+        req.on('end', () => {
+            console.log(body);
+            res.end();
+        })
+    }
+    else {
+        res.end();
+    }
+
 }).listen(8080);
