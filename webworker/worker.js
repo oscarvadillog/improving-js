@@ -11,7 +11,3 @@ self.onmessage = e => {
         self.postMessage(result);
     }, 3000);
 }
-
-
-
-
