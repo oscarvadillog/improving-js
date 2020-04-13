@@ -6,7 +6,8 @@
     "scripts": {
         "fetch:server": "node fetch/server.js",
         "websocket:client": "node websocket/client.js",
-        "websocket:server": "node websocket/server.js"
+        "websocket:server": "node websocket/server.js",
+        "webworker:serve": "http-server -p 8080 ./webworker"
     },
     "repository": {
         "type": "git",
@@ -25,6 +26,7 @@
     "homepage": "https://github.com/oscarvadillog/improving-js#readme",
     "dependencies": {
         "chalk": "^4.0.0",
+        "http-server": "^0.9.0",
         "ws": "^7.2.3"
     }
 }

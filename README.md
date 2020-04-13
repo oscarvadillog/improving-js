@@ -30,6 +30,19 @@ npm run fetch:server
 Then open the [client](fetch/client.html) file to make HTTP requests using Fetch API
 
 
+### Web Worker API
+
+Web workers are the most general purpose type of worker. In this case we are going to test the Web Worker API to calculate a math operation which takes a few seconds. In this way we will be freeing the main thread of the browser while the worker calculates the result.
+
+Execute the command below to serve the [index.html](webworker/index.html) static file in a local server:
+
+```shell
+npm run webworker:serve
+```
+
+Therefore open the following website in your browser: [http://localhost:8080/index.html](http://localhost:8080/index.html)
+
+
 ### WebSocket API
 
 This is a simple WebSocket server based on Node.js in order to learn how the WebSocket API works.
