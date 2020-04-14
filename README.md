@@ -58,3 +58,8 @@ On the client side you can either run the command below or open the [web example
 ```shell
 npm run websocket:client
 ```
+
+
+## Author
+
+* Oscar Vadillo [[website](https://oscarvadillog.github.io/oscarvadillog)|[github](https://github.com/oscarvadillog)]
