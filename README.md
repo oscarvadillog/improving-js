@@ -1,6 +1,6 @@
 # Improving JS
 
-This repo has been created to improve and practice my JavaScript skills.
+This project has been created to improve and practice my JavaScript skills. Let's get started!
 
 ## Examples
 
